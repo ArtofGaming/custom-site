@@ -1,10 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "About Me";
+const identity = {
+  firstName: "Campbell",
+  country: "USA",
+  occupation: "Software Developer",
+  hobbies: ["art", "singing", "music composition"],
+};
+
+const skills = ["C#", "CSS", "C++", "Unity", "Godot", "Python", "Agile", "SCRUM", "SQL"];
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={pageTitle}>
 	<main>
+		<!--- 
 		<svg
 			class="astro-a"
 			width="248"
@@ -33,9 +47,19 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		<a href="/blog/">Blog</a>
+		-->
+
+		
+		<Header/>
+
+		<title>{pageTitle}</title>
+		<style>
+			h2{
+				
+				font-size: 4rem;
+			}
+		</style>
+
 		<h2 class="instructions"> Looking for a <span class="text-gradient"> motivated, Agile knowledgable C#, C++ and Python programmer and game designer</span> who loves honing her craft?</h2>
 		<h2 class="instructions"> Look no farther</h2>
         <img src="../favicon.svg" alt="placeholder image">
@@ -45,13 +69,19 @@ import Card from '../components/Card.astro';
             looking to use my passion and collected knowledge to work on software and video games.
         </p>
         <p class="indented-paragraph">   
-            I have knowledge of  C#, C++, SQL, Python, Unity, Unreal, Jira, and Agile Methodology.
+            My skills are:
+			<ul class="indented-paragraph">
+  				{skills.map((skill) => <li class="skill">{skill}</li>)}
+			</ul>
         </p>
         <p class = "indented-paragraph">
             Driven by the goal of getting better every day, I am committed to learning all I can and improvement via iteration. I am eager to collaborate with like-minded people to create well
             made products that are satisfying for the user. I love productivity content and art of all kinds and can usually be found doing some kind of creative hobby on the weekends.
 		</p>
-		
+		<Footer/>
+		<script>
+			import '../scripts/menu.js'
+		  </script>
 	</main>
 </Layout>
 
@@ -91,7 +121,7 @@ import Card from '../components/Card.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: rgba(var(--accent-light), 12%);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
