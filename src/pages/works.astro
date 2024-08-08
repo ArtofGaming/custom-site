@@ -1,46 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css'
-import BaseLayout from '../layouts/BaseLayout.astro';
 
-const pageTitle = "Home Page";
+const pageTitle = "Portfolio";
+const allWorks = await Astro.glob('./works/*.md');
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<main>
-
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Coming Soon
-		</p>
-		<ul role="list" class="link-card-grid">
-			<!-- <Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-			-->
+        <p>This is where I keep my best projects.</p>
+		
+		<ul>
+			{allWorks.map((card) => <Card
+			title={card.frontmatter.title}
+			body={card.frontmatter.description}
+			href={card.frontmatter.title}
+			image={card.frontmatter.image.url}
+			/>)}
 		</ul>
-		<script>
-			import '../scripts/menu.js'
-		  </script>
+
+		  <script>
+			  import '../scripts/menu.js'
+			</script>
 	</main>
 </BaseLayout>
 
@@ -101,4 +86,11 @@ const pageTitle = "Home Page";
 		gap: 2rem;
 		padding: 0;
 	}
+    .indented-paragraph{
+        width: 500px;
+        max-width: calc(100% - 3rem);
+		position: relative;
+		left: 20rem;
+    }
+
 </style>
