@@ -10,15 +10,15 @@ const pageTitle = "Portfolio";
 const allWorks = await Astro.glob('./works/*.md');
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout title={pageTitle}>
 	<main>
         <p>This is where I keep my best projects.</p>
 		
-		<ul>
+		<ul role="list" class="link-card-grid">
 			{allWorks.map((card) => <Card
 			title={card.frontmatter.title}
 			body={card.frontmatter.description}
-			href={card.frontmatter.title}
+			href={`works/${card.frontmatter.title}`}`
 			image={card.frontmatter.image.url}
 			/>)}
 		</ul>

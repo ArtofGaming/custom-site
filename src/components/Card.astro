@@ -8,8 +8,8 @@ interface Props {
 
 const { href, title, body, image } = Astro.props;
 ---
-
-<img class="card__img" width="226" height="127" src={image} alt="project image"
+<li class="card">
+<img class="card-img" width="226" height="127" src={image} alt="project image"
 <li class="link-card">
 	<a href={href}>
 		<h2>
@@ -20,6 +20,7 @@ const { href, title, body, image } = Astro.props;
 			{body}
 		</p>
 	</a>
+</li>
 </li>
 <style>
 	.link-card {
