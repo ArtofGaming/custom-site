@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Tag from '../pages/tags/[tag].astro';
 import '../styles/global.css'
 
 
@@ -13,17 +14,25 @@ const allPosts = await Astro.glob('./blog/*.md');
 
 <BaseLayout pageTitle={pageTitle}>
 	<main>
-		
         <em>Where my musings on creativity, notes on process, and progress updates live</em>
-		<ul role="list" class="link-card-grid">
-			{allPosts.map((card) => <Card
-			title={card.frontmatter.title}
-			body={card.frontmatter.description}
-			href={`${card.frontmatter.title}`}
-			image={card.frontmatter.image.url}
-			/>)}
-			
-		</ul>
+			<ul role="list" class="link-card-grid">
+				{allPosts.sort((a,b) => {
+					const DateA = a.frontmatter.pubDate
+					const DateB = b.frontmatter.pubDate
+					if(DateA > DateB) {
+						return -1;
+					}
+					if (DateA < DateB){
+						return 1;
+					}}
+				).map((card) => <Card
+				pubDate={card.frontmatter.pubDate}
+				title={card.frontmatter.title}
+				body={card.frontmatter.description}
+				href={`${card.frontmatter.title}`}
+				image={card.frontmatter.image.url}
+				/>)}
+			</ul>
 		<!--<ul>
 			{allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 		</ul>-->
@@ -55,7 +64,7 @@ const allPosts = await Astro.glob('./blog/*.md');
 	}
 	em {
 		color: rgb(228, 157, 126);
-		font-size: 1.5rem;
+		font-size: 1.25rem;
 		font-weight: 200;
 		line-height: 1;
 		text-align: left;
