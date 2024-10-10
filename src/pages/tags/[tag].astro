@@ -22,18 +22,16 @@ const { posts } = Astro.props;
   <p>Posts tagged with "{tag}"</p>
 
   <ul class="back">
-    {posts.map((post) => <ul><a href={post.url}>{post.frontmatter.title}</a></ul>)}
+    {posts.map((post) => <ul><a href={post.url}>{post.frontmatter.title}</a> post.description</ul>)}
   </ul>
 </BaseLayout>
 
 <style>
   .back{
     background-color: white;
-        
         padding: 1em;
-        border-style: dotted
+        border-style: dotted;
   }
-  ;
   ul{
     padding-left: 2ch;
   }

@@ -5,7 +5,7 @@ export async function GET(context) {
     title: 'Campbell Turner | Blog',
     description: 'Where my musings on creativity, notes on process, and progress updates live',
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
+    items: await pagesGlobToRssItems(import.meta.glob('./blog/*.md')),
     customData: `<language>en-us</language>`,
   });
 }

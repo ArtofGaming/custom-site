@@ -38,13 +38,14 @@ html {
   .card {
     
     background-size: 300%;
-    padding: 20px;
+    padding-left: 20px;
   }
   .link-card-grid{
     display: grid;
     grid-template: 
     "link-card link-card";
-    grid-template-columns: 23rem;
+    grid-template-columns: 22rem;
+    padding-left: -200em;
     padding: 0;
   }
   .card-img{
