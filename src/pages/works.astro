@@ -7,13 +7,14 @@ import Footer from '../components/Footer.astro';
 import '../styles/global.css'
 
 const pageTitle = "Portfolio";
-const allWorks = await Astro.glob('./works/*.md');
+
 ---
 
 <BaseLayout title={pageTitle}>
 	<main>
         <p>This is where I keep my best projects.</p>
 		
+<!-- 
 		<ul role="list" class="link-card-grid">
 			{allWorks.map((card) => <Card
 			title={card.frontmatter.title}
@@ -22,7 +23,7 @@ const allWorks = await Astro.glob('./works/*.md');
 			image={card.frontmatter.image.url}
 			/>)}
 		</ul>
-
+-->
 		  <script>
 			  import '../scripts/menu.js'
 			</script>
