@@ -9,7 +9,7 @@ import '../styles/global.css'
 
 
 const pageTitle = "My Thoughts";
-const allPosts = await Astro.glob('../blog/*.md');
+const allPosts = await Astro.glob('../pages/blog/*.md');
 ---
 
 <BaseLayout pageTitle={pageTitle}>
