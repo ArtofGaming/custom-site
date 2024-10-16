@@ -22,8 +22,10 @@ theme:
     }
 </style>
 
-<p style="border-color: rgb(228, 157, 126); border-width: 7px; border-style: dashed; padding: 2px; text-align: center">
-    This was made by applying skills learned from <a style="color: white"href='https://www.youtube.com/watch?v=utwSPVGZiiw&list=PLTm4FjoXO7nfn0jB0Ig6UbZU1pUHSLhRU'>FireBrain's tutorial series</a>
+<p style="border-color: rgb(228, 157, 126); border-width: 7px; border-style: dashed;  text-align: center">
+    <video width="426" height="240" controls>
+        <source src="/College Caper Vid.mp4" type="video/mp4">
+    </video>
     <p>
     </p>
     See code <a style="color: white"href='https://github.com/ArtofGaming/College-Caper'>here</a>
