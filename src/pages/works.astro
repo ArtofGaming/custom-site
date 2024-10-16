@@ -20,7 +20,7 @@ const allWorks = await Astro.glob('../pages/works/*.md');
 			{allWorks.map((works) => <Work
 			title={works.frontmatter.title}
 			body={works.frontmatter.description}
-			href={`works/${works.frontmatter.title}`}`
+			href={`${works.frontmatter.title}`}`
 			image={works.frontmatter.image.url}
 			/>)}
 		</ul>
