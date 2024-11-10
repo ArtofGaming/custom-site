@@ -1,15 +1,4 @@
-.hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: rgb(228, 157, 126);
-  }
+
 html {
     background-color:rgb(54, 35, 12);
     font-family: sans-serif;
@@ -56,20 +45,34 @@ html {
   }
 
   /* nav styles */
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(228, 157, 126);
+  }
 
 .nav-links {
     width: 100%;
     top: 5rem;
+    left: 48px;
     color: rgb(255, 255, 238);
     display: none;
     text-align: center;
+    margin: 0;
     
   }
   
   .nav-links a {
-    display: flexbox;
+    display: block;
     text-align: center;
-    margin:auto;
+    padding: 10 0;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -95,10 +98,11 @@ html {
       background: none;
     }
   
-    .nav-links a {
-      display: inline-block;
-      padding: 15px 20px;
-    }
+    
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
   
     .hamburger {
         display: none;
