@@ -1,38 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Tag from '../pages/tags/[tag].astro';
 import '../styles/global.css'
 
-
 const pageTitle = "My Thoughts";
-const allPosts = await Astro.glob('../pages/blog/*.md');
+const allPosts = Object.values(import.meta.glob('../pages/blog/*.md'));
 ---
-
-<BaseLayout pageTitle={pageTitle}>
+<PersonalBaseLayout pageTitle={pageTitle}>
 	<main>
         <em>Where my musings on creativity, notes on process, and progress updates live</em>
-			<ul role="list" class="link-card-grid">
-				{allPosts.sort((a,b) => {
-					const DateA = a.frontmatter.pubDate
-					const DateB = b.frontmatter.pubDate
+			<!--<ul role="list" class="link-card-grid">
+				/*{allPosts.sort((a,b) => {
+					const DateA = a.frontmatter.pubDate.toLocaleDateString()
+					const DateB = b.frontmatter.pubDate.toLocaleDateString()
 					if(DateA > DateB) {
 						return -1;
 					}
 					if (DateA < DateB){
 						return 1;
 					}}
-				).map((card) => <Card
+				).map((post) => <Card
 				pubDate={card.frontmatter.pubDate}
 				title={card.frontmatter.title}
 				body={card.frontmatter.description}
 				href={`${card.frontmatter.title}`}
 				image={card.frontmatter.image.url}
 				/>)}
-			</ul>
+			</ul>-->
 		<!--<ul>
 			{allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
 		</ul>-->
@@ -42,7 +40,7 @@ const allPosts = await Astro.glob('../pages/blog/*.md');
 				import '../scripts/menu.js'
 			</script>
 	</main>
-</BaseLayout>
+</PersonalBaseLayout>
 
 <style>
 	main {

@@ -10,9 +10,22 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^3.5.3",
-    "@astrojs/rss": "^4.0.7",
-    "astro": "^4.15.8",
+    "@astrojs/preact": "^4.1.0",
+    "@astrojs/rss": "^4.0.12",
+    "astro": "^5.12.5",
     "preact": "^10.24.1"
-  }
+  },
+  "description": "```sh\r npm create astro@latest -- --template basics\r ```",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtofGaming/custom-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtofGaming/custom-site/issues"
+  },
+  "homepage": "https://github.com/ArtofGaming/custom-site#readme"
 }

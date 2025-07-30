@@ -1,0 +1,141 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+const { pageTitle } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <script src="https://kit.fontawesome.com/c9d350e02a.js" crossorigin="anonymous"></script>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="My digital home" name="description" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+    <!-- CSS: -->
+    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
+    <link href="./global.css" rel="stylesheet" />
+    
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+
+  <body>
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+      <Header />
+
+	  
+        
+      <!-- =============================================== -->
+      <!-- LEFT SIDEBAR -->
+      <!-- =============================================== -->
+
+      <aside class="left-sidebar">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Under Construction</div>
+          <p>This site is under active construction, so if something looks off, it probably is! </p>
+        </div>
+        <div class="sidebar-section">
+          <div class="sidebar-title">Site Updates Feed</div>
+          <blockquote>
+            <p>7/29 - separated sidebar sections and started making collection</p>
+            <p>7/28 - started customizing layout and diagnosing blog population issue</p>
+            <p>7/27 - added layout from layout generator</p>
+          </blockquote>
+        </div>
+      </aside>
+      
+      <aside class="left-sidebar1">
+        <div class="sidebar-section">
+          <div class="sidebar-title">About Me</div>
+          <p>A mystery wrapped in an enigma... </p>
+        </div>
+      </aside>
+      <aside class="left-sidebar2">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Recent Blog Posts Feed</div>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+        </div>
+      </aside>
+      <aside class="left-sidebar3">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Media I'm Currently Enjoying/Last Enjoyed</div>
+          <ul>
+            <li>Movie: Kpop Demon Hunters</li>
+            <li>Show:</li>
+            <li>Album: Ado's Best Adobum</li>
+            <li>Game: Patapon 1</li>
+            <li>Book: This Princess Kills Monsters & Indie Games: From Dream to Delivery</li>
+          </ul>
+        </div>
+      </aside>
+      <aside class="left-sidebar4">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Currently Working On</div>
+          <img class="full-width-image" src="https://picsum.photos/id/141/1000/400">
+        </div>
+      </aside>
+      <aside class="left-sidebar5">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Credits</div>
+          <marquee>
+            <div class="site-button">
+          	  <p> Base layout: <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></p>
+            </div>
+          </marquee>
+        </div>
+      </aside>
+	
+      <aside class="left-sidebar7">
+        <div class="sidebar-section">
+          <div class="sidebar-title">Todo List</div>
+          <ul>
+            <li><del>Fill out Todo List</del></li>
+            <li><del>Mark Sidebar Sections</del></li>
+            <li><del>Separate Sidebar Sections</del></li>
+            <li>Fill Out About Me</li>
+            <li><del>Add Under Construction Notice</del></li>
+            <li>Add Projects I'm Currently Working On</li>
+            <li>Add Dungeon Generator to This Website</li>
+            <li>Finish Archive Page</li>
+            <li>Add Character Hub</li>
+            <li>Add About Me</li>
+            <li>Add Updates to Blog Page</li>
+          </ul>
+        </div>
+      </aside>
+      
+  
+      <main id="content"> <!-- Do NOT remove the ID here -->
+        <slot />
+      </main>
+
+
+      <!-- =============================================== -->
+      <!-- FOOTER -->
+      <!-- =============================================== -->
+
+      <footer>
+            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
+      </footer>
+  
+    <!-- Closing .layout: -->
+    </div>
+  </body>
+
+</html>

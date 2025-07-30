@@ -1,8 +1,8 @@
 ---
-import BaseLayout from './BaseLayout.astro';
+import PersonalBaseLayout from './PersonalBaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
-<BaseLayout pageTitle={frontmatter.title}>
+<PersonalBaseLayout pageTitle={frontmatter.title}>
     <p>Written by {frontmatter.author}</p>
     <p>Published on: {frontmatter.pubDate.toString().slice(0,10)}</p>
     
@@ -16,7 +16,7 @@ const { frontmatter } = Astro.props;
       ))}
     </div>
     
-</BaseLayout>
+</PersonalBaseLayout>
 <style>
     b{
       color: rgb(228, 157, 126)
