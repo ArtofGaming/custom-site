@@ -198,23 +198,27 @@ header {
 
   /*Cards*/
   .card {
-    
     background-size: 300%;
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .link-card-grid{
     display: grid;
     grid-template: 
-    "link-card link-card";
-    grid-template-columns: 22rem;
-    padding-left: -200em;
-    padding: 0;
+    "link-card link-card link-card";
+    grid-template-columns: 19rem;
+    grid-template-rows:15rem;
+    min-width: 19rem;
+    min-height: 0;
+    
+    gap: .5em;
   }
   .card-img{
-    display:block;
+    display:grid;
     margin-left: auto;
     margin-right: auto;
-    width:40%; 
+    margin-top:0em;
+    max-width:80%; 
+    border-radius: 8px;;
   }
 
   /* nav styles */

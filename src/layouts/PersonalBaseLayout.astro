@@ -19,11 +19,6 @@ const { pageTitle } = Astro.props;
     <!-- FavIcon (small image in tab), change to any image you want: -->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-    <!-- CSS: -->
-    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
-    <link href="./global.css" rel="stylesheet" />
-    
-
     <script>
       // Template generated with petrapixel's layout generator.
       // (Please do not remove this credit.)
@@ -31,7 +26,7 @@ const { pageTitle } = Astro.props;
     </script>
   </head>
 
-  <body>
+  <body style="min-height:0;">
     <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
     <a href="#content" id="skip-to-content-link">Skip to content</a>
 
@@ -52,6 +47,7 @@ const { pageTitle } = Astro.props;
         <div class="sidebar-section">
           <div class="sidebar-title">Site Updates Feed</div>
           <blockquote>
+            <p>7/30 - fixed blog hub page and some styling</p>
             <p>7/29 - separated sidebar sections and started making collection</p>
             <p>7/28 - started customizing layout and diagnosing blog population issue</p>
             <p>7/27 - added layout from layout generator</p>
@@ -114,14 +110,14 @@ const { pageTitle } = Astro.props;
             <li>Add Dungeon Generator to This Website</li>
             <li>Finish Archive Page</li>
             <li>Add Character Hub</li>
-            <li>Add About Me</li>
-            <li>Add Updates to Blog Page</li>
+            <li><del>Fix Blog Hub Page</del></li>
+            <li>Add Updates Feed</li>
           </ul>
         </div>
       </aside>
       
   
-      <main id="content"> <!-- Do NOT remove the ID here -->
+      <main id="content" style="min-height:0;"> <!-- Do NOT remove the ID here -->
         <slot />
       </main>
 

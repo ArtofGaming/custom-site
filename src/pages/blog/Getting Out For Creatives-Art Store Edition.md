@@ -1,8 +1,7 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Getting Out For Creatives-Art Store Edition'
 pubDate: 2024-10-02
-description: 'People always tell why you to touch grass, but never where. This is one inspiring place to go.'
+description: 'People always tell you to touch grass, but never where to find it.'
 author: 'Campbell Turner'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
@@ -12,7 +11,7 @@ theme:
     back-color: "white"
 ---
 
-**People always tell you to touch grass, but they never say where. This is a blog post giving one idea of an inspiring place to go.**
+**People always tell you to touch grass, but they never say where to find it.**
 
 <style is:global>
     div{
