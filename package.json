@@ -12,6 +12,8 @@
   "dependencies": {
     "@astrojs/preact": "^4.1.0",
     "@astrojs/rss": "^4.0.12",
+    "@fontsource-variable/noto-serif-georgian": "^5.2.7",
+    "@fontsource-variable/winky-rough": "^5.2.4",
     "astro": "^5.12.5",
     "preact": "^10.24.1"
   },

@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+import '@fontsource-variable/winky-rough';
 const { pageTitle } = Astro.props;
 ---
 <html lang="en">
@@ -40,13 +41,18 @@ const { pageTitle } = Astro.props;
       <!-- =============================================== -->
 
       <aside class="left-sidebar">
+        <div class="sidebar-title">Under Construction</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Under Construction</div>
+          
           <p>This site is under active construction, so if something looks off, it probably is! </p>
         </div>
+      </aside>
+      <aside class="left-sidebar6">
+        <div class="sidebar-title">Site Updates Feed</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Site Updates Feed</div>
+          
           <blockquote>
+            <p>8/02 - changed header font, fixed sidebars, hide portfolio page
             <p>7/30 - fixed blog hub page and some styling</p>
             <p>7/29 - separated sidebar sections and started making collection</p>
             <p>7/28 - started customizing layout and diagnosing blog population issue</p>
@@ -54,23 +60,18 @@ const { pageTitle } = Astro.props;
           </blockquote>
         </div>
       </aside>
-      
       <aside class="left-sidebar1">
+        <div class="sidebar-title">Recent Blog Posts Feed</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">About Me</div>
-          <p>A mystery wrapped in an enigma... </p>
+          
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
         </div>
       </aside>
       <aside class="left-sidebar2">
+        <div class="sidebar-title">Media I'm Currently Enjoying/Last Enjoyed</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Recent Blog Posts Feed</div>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        </div>
-      </aside>
-      <aside class="left-sidebar3">
-        <div class="sidebar-section">
-          <div class="sidebar-title">Media I'm Currently Enjoying/Last Enjoyed</div>
+          
           <ul>
             <li>Movie: Kpop Demon Hunters</li>
             <li>Show:</li>
@@ -80,15 +81,17 @@ const { pageTitle } = Astro.props;
           </ul>
         </div>
       </aside>
-      <aside class="left-sidebar4">
+      <aside class="left-sidebar3">
+      <div class="sidebar-title">Currently Working On</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Currently Working On</div>
+          
           <img class="full-width-image" src="https://picsum.photos/id/141/1000/400">
         </div>
       </aside>
-      <aside class="left-sidebar5">
+      <aside class="left-sidebar4">
+      <div class="sidebar-title">Credits</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Credits</div>
+          
           <marquee>
             <div class="site-button">
           	  <p> Base layout: <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></p>
@@ -97,9 +100,10 @@ const { pageTitle } = Astro.props;
         </div>
       </aside>
 	
-      <aside class="left-sidebar7">
+      <aside class="left-sidebar5">
+      <div class="sidebar-title">Todo List</div>
         <div class="sidebar-section">
-          <div class="sidebar-title">Todo List</div>
+          
           <ul>
             <li><del>Fill out Todo List</del></li>
             <li><del>Mark Sidebar Sections</del></li>
