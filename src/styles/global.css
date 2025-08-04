@@ -95,6 +95,8 @@ html {
   .sidebar-section{
     border: var(--border);
     border-radius: var(--round-borders);
+    max-height: 12rem;
+    overflow-y: auto;
   }
 
   .sidebar-section ul,
@@ -110,7 +112,7 @@ html {
   width: 1200px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "leftSidebar6 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
   /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
 }
 
@@ -147,6 +149,11 @@ header {
 .header-image img {
   width: 100%;
   height: auto;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 1.5em;
 }
 
   body {
@@ -250,7 +257,7 @@ header {
     display: none;
     text-align: center;
     margin: 0;
-    
+    font-family: var(--heading-font);
   }
   
   .nav-links a {

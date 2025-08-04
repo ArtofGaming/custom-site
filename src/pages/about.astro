@@ -1,38 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
 import Card from '../components/Card.astro';
 import Header from '../components/Header.astro';
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 
 const pageTitle = "About Me";
-const identity = {
-  firstName: "Campbell",
-  country: "USA",
-  occupation: "Software Developer",
-  hobbies: ["art", "singing", "music composition"],
-};
-
-const skills = ["C#", "CSS", "C++", "Unity", "Godot", "Python", "Agile", "SCRUM", "SQL"];
 ---
 
-<BaseLayout title={pageTitle}>
-	<main>
+<PersonalBaseLayout title={pageTitle}>
+	<h1>Me</h1>
+	<p>Hi! Call me Cam! I'm a game dev in her twenties who does game dev both professionally 
+	and as a hobby. Speaking of hobbies, I have a lot of them: writing, drawing, painting 
+	(digitally and with watercolors), crocheting, fashion, game dev, reading, singing, 
+	writing music, programming, gaming, learning Japanese, 3d modelling, animating, and 
+	doing pixel art. I'm also learning how to make comics. I'm a very passionate person 
+	who tries to put my all into the things I love and doing what's right for the people I 
+	love and passion is a trait I love to see in others. I think everyone should talk about 
+	the things that make their eyes light up and their hearts sing without fear of being 
+	cringe.</p>
+	<h1>My Work</h1>
+	<p>As you could probably tell from my list of hobbies, I work in a lot of different mediums. 
+	Sometimes something is in one medium because I can't conceive of it in any other form, 
+	sometimes I just choose an idea so I experiment with a new take on that medium or test 
+	myself and my knowledge. </p>
+	<p>When I was younger, my work primarily focused on struggles that I or my friends dealt with 
+	or topics I wanted to explore but was too afraid to broach with others (or sometimes just 
+	others who would be able to explain an opposing argument). While I still incorporate topics 
+	close to my heart, I don't show my hand quite as much and now create to give others a place 
+	where they can explore topics or experience emotions in a safe way.</p>
+	<p>My favorite genres to create are probably mystery and horror, but I like making silly little
+	things too. For now, all the games I've ever made public are available on my itch.io, but due
+	to ephemerality of platforms (the fact that they won't be around forever) I'll be adding newer 
+	stuff here as well, when possible. (My host is quite generous but some things will just be too 
+	big to handle).</p>
+	<h1>I'm currently...</h1>
+	<p> Reading: This Princess Kills Monsters and Indie Games From Dream to Delivery </p>
+	<p> Listening to: Ado's Best Adobum </p>
+	<p> Playing: Patapon 1 </p>
+	<p> Studying: Data Structures and Algorithms and C++ </p>
+	<h1>My Favorites</h1>
+	<p> Genres: mystery, death game, horror, slice of life, dystopian, fantasy, mythology/folklore</p>
+	<p> Games/Puzzles: Danganronpa, Dragon Quest, Professor Layton series, Rhythm Heaven series, Picross, Logic grid, MURDLE
+	<p> Shows/Movies: The Laughing Salesman (both original and reboot), Aggretsuko, NEW GAME!, Cells at Work BLACK!</p>
+	<p> Books: Feed, The Poet X, Less, The Grace Year, Making Comics, Four Thousand Weeks Time Management for Mortals
+	<p> Music: Ado, Mili, nerdcore, J-pop, pop, pop punk, metal, punk, Vocaloid</p>
 
-		
-        <p>   
-            My skills are:
-			<ul>
-  				{skills.map((skill) => <li class="skill">{skill}</li>)}
-			</ul>
-        </p>
-		</p>
 		<script>
 			import '../scripts/menu.js'
 		  </script>
-	</main>
-</BaseLayout>
+</PersonalBaseLayout>
 
 <style>
 	main {
