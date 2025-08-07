@@ -9,15 +9,17 @@
   --background-color: #36230c;
   --content-background-color: #624112;
   --sidebar-background-color: #624112;
+  --sidebar-main-background-color:var(--link-color);
 
   /* Text Colors: */
   --text-color: #fef2eb;
+  --sidebar-title-text-color:var(--background-color);
   --sidebar-text-color: #fef2eb;
   --link-color: #ffc7ca;
   --link-color-hover: #ffe2ca;
 
   /* Text: */
-  --font: Arial, sans-serif;
+  --font: "Nunito Variable", sans-serif;
   --heading-font: "Winky Rough Variable", sans-serif;
   --font-size: 14px;
 
@@ -28,36 +30,95 @@
   --round-borders: 10px;
   --sidebar-width: 200px;
 }
+/* -------------------------------------------------------- */
+/* BASICS */
+/* -------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--margin);
+  color: var(--text-color);
+  font-family: var(--font);
+  line-height: 1.2;
+  background: var(--background-color);
+  background-image: url("");
+  
+}
+
+::selection {
+  /* (Text highlighted by the user) */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+mark {
+  /* Text highlighted by using the <mark> element */
+  text-shadow: 1px 1px 4px var(--link-color);
+  background-color: inherit;
+  color: var(--text-color);
+}
+
+/* Links: */
+a {
+  text-decoration: underline;
+}
+
+a,
+a:visited {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-color-hover);
+  text-decoration: none;
+}
 
 html {
     background-color:rgb(54, 35, 12);
     font-family: sans-serif;
   }
   
+  .divider{
+    margin:auto;
+  }
+
   aside {
   grid-area: aside;
   border: var(--border);
   border-radius: var(--round-borders);
   overflow: hidden;
-  background: var(--sidebar-background-color);
+  background: var(--sidebar-main-background-color);
   padding: var(--padding);
-  color: var(--sidebar-text-color);
+  
   }
 
   .left-sidebar1 {
   grid-area: leftSidebar1;
+  padding: .4em
   }
 
   .left-sidebar2 {
   grid-area: leftSidebar2;
+  padding: .4em
   }
 
   .left-sidebar3 {
   grid-area: leftSidebar3;
+  padding: .4em
   }
 
   .left-sidebar4 {
   grid-area: leftSidebar4;
+  padding: .4em
   }
 
   .left-sidebar5 {
@@ -74,6 +135,7 @@ html {
 
   .left-sidebar {
   grid-area: leftSidebar;
+  padding: .4em
   }
 
   .right-sidebar {
@@ -86,6 +148,7 @@ html {
   font-family: var(--heading-font);
   margin-bottom: .2em;
   text-align: center;
+  color:var(--sidebar-title-text-color);
   }
 
   .sidebar-section:not(:last-child) {
@@ -96,7 +159,10 @@ html {
     border: var(--border);
     border-radius: var(--round-borders);
     max-height: 12rem;
+    padding-left: .1em;
     overflow-y: auto;
+    background-color: var(--sidebar-background-color);
+    color: var(--sidebar-text-color);
   }
 
   .sidebar-section ul,
@@ -168,8 +234,7 @@ h1 {
   font-family: var(--font);
   line-height: 1.2;
   background: var(--background-color);
-  background-image: url("");
-  
+  background-image: url('../../foollovers-pinkchoco.gif'); 
 }
 
   /* -------------------------------------------------------- */
@@ -208,6 +273,77 @@ h1 {
     color: rgb(228, 157, 126);
   }
 
+/* HEADINGS: */
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  font-family: var(--heading-font);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+main h1:first-child,
+main h2:first-child,
+main h3:first-child,
+main h4:first-child,
+main h5:first-child,
+main h6:first-child {
+  margin-top: 0;
+}
+
+main h1 {
+  font-size: 1.5em;
+}
+
+main h2 {
+  font-size: 1.4em;
+}
+
+main h3 {
+  font-size: 1.3em;
+}
+
+main h4 {
+  font-size: 1.2em;
+}
+
+main h5 {
+  font-size: 1.1em;
+}
+
+main h6 {
+  font-size: 1em;
+}
+
+/* -------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------- */
+
+footer {
+  grid-area: footer;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  overflow: hidden;
+  font-size: 0.75em;
+  padding: 15px;
+  background: var(--content-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+footer a,
+footer a:visited {
+  color: var(--link-color);
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--link-color-hover);
+}
 
 
   /*Cards*/

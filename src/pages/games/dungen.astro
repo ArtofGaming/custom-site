@@ -1,0 +1,72 @@
+---
+import '../../styles/global.css'
+import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
+
+const pageTitle = "Dungeon Generator";
+---
+
+<PersonalBaseLayout pageTitle={pageTitle}>
+	<h1> Dungeon Generator </h1>
+	<p> This project is <b> still in development</b>!</p>
+	<iframe frameborder="0" src="https://itch.io/embed-upload/13484487?color=ffc7ca" allowfullscreen="" width="960" height="620"><a href="https://theartofgaming.itch.io/dungeon-generator">Play Dungeon Generator on itch.io</a></iframe>
+        
+	<p> <br> <br> Generate a variety of dungeons with the click of a button.  While there are no options for the player, there's still a variety of layouts in resulting dungeons due to the method of procedural generation.
+		<br>Hopefully can be of use to DMs, devs, and boss monsters
+		<br>Done in 6 days over the course of LD 57 Extra Jam to learn more about methods of procedural generation, namely binary space partitioning. 
+	</p>
+        
+		<h3>Known Bugs</h3>
+        <p> Sometimes paths will generate outside of the rooms or not connect all the rooms to one another </p>
+
+		<h3>Next Expected Update</h3>
+		<p> Q3 2025 - fixing room connections plus a fun little extra </p>
+
+		<script>
+			import '../../scripts/menu.js'
+		  </script>
+	
+</PersonalBaseLayout>
+
+<style>
+	/*main {
+		margin: auto;
+		padding: 1%;
+		width: 800px;
+		max-width: calc(100% - 1%);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.divider{
+		display:flex;
+		justify-content:center;
+		margin:auto;
+		text-align:center;
+		width:50%;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}*/
+	img {
+    float:left;
+	padding: 2%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

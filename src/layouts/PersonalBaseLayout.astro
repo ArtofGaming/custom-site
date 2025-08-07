@@ -8,17 +8,14 @@ const { pageTitle } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico?v=1.1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <script src="https://kit.fontawesome.com/c9d350e02a.js" crossorigin="anonymous"></script>
 
     <!-- Change your site description: (It is shown in Google results) -->
-    <meta content="My digital home" name="description" />
-
-    <!-- FavIcon (small image in tab), change to any image you want: -->
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <meta content="The digital home for my thoughts, games, and other projects" name="description" />
 
     <script>
       // Template generated with petrapixel's layout generator.
@@ -34,73 +31,63 @@ const { pageTitle } = Astro.props;
     <div class="layout">
       <Header />
 
-	  
-        
       <!-- =============================================== -->
       <!-- LEFT SIDEBAR -->
       <!-- =============================================== -->
 
-      <aside class="left-sidebar">
+      <!--<aside class="left-sidebar">
         <div class="sidebar-title">Under Construction</div>
         <div class="sidebar-section">
-          
           <p>This site is under active construction, so if something looks off, it probably is! </p>
         </div>
-      </aside>
-      <aside class="left-sidebar5">
+      </aside>-->
+      <aside class="left-sidebar2">
         <div class="sidebar-title">Site Updates Feed</div>
         <div class="sidebar-section">
-          
-          <blockquote>
+            <p>8/06 - edited some page decorations, added favicon, fixed footer</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
+            <p>8/05 - added decorations, added general games page and individual game page (Dungeon Generator)</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>8/03 - added about page</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>8/02 - changed header font, fixed sidebars, hide portfolio page</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>7/30 - fixed blog hub page and some styling</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>7/29 - separated sidebar sections and started making collection</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>7/28 - started customizing layout and diagnosing blog population issue</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>7/27 - added layout from layout generator</p>
-          </blockquote>
         </div>
       </aside>
-      <aside class="left-sidebar1">
-        <div class="sidebar-title">Recent Blog Posts Feed</div>
-        <div class="sidebar-section">
-          
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-          	<a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
-        </div>
-      </aside>
-      <aside class="left-sidebar2">
+      <aside class="left-sidebar">
       <div class="sidebar-title">Currently Working On</div>
         <div class="sidebar-section">
-          
-          <img class="full-width-image" src="https://picsum.photos/id/141/1000/400">
+          <p>Unannounced Short Horror Game</p>
+          <p>A Wine Colored Crime Remake</p>
+          <p>This Website :p</p>
         </div>
       </aside>
       <aside class="left-sidebar3">
       <div class="sidebar-title">Credits</div>
         <div class="sidebar-section">
-          
           <marquee>
             <div class="site-button">
-          	  <p> Base layout: <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a></p>
-            </div>
-            <div class="site-button">
-              <p> Doll maker for self portrait: <a href="https://dollzrevival.neocities.org/" target="_blank"><img src="../DZRButton4.gif" alt="Dollz Revival"></a></p>
+          	  <p> Base layout - <a href="https://petrapixel.neocities.org/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/img/linkback.gif" alt="petrapixel"></a>
+              Doll maker - <a href="https://dollzrevival.neocities.org/" target="_blank"><img src="../DZRButton4.gif" alt="Dollz Revival"></a>
+              Page Decoration - <a href="https://foollovers.com/" target="_blank"><img src="../foollovers8826.gif" alt="Fool Lovers"></a>
+              </p>
             </div>
           </marquee>
         </div>
       </aside>
 	
-      <aside class="left-sidebar4">
+      <aside class="left-sidebar1">
       <div class="sidebar-title">Todo List</div>
         <div class="sidebar-section">
-          
           <ul>
-            <li><del>Separate Sidebar Sections</del></li>
-            <li><del>Fill Out About Me</del></li>
-            <li>Add Projects I'm Currently Working On</li>
-            <li>Add Dungeon Generator to This Website</li>
-            <li>Finish Archive Page</li>
+            <li>Set up RSS feed</li>
             <li>Add Character Hub</li>
             <li>Add Updates Feed</li>
           </ul>
@@ -117,9 +104,7 @@ const { pageTitle } = Astro.props;
       <!-- FOOTER -->
       <!-- =============================================== -->
 
-      <footer>
-            <div>Footer Text. <a href="/">Link.</a> Template generated with <a href="https://petrapixel.neocities.org/coding/layout-generator.html">petrapixel's layout generator</a>.</div>
-      </footer>
+      <Footer />
   
     <!-- Closing .layout: -->
     </div>
