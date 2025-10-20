@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import divider from "../ribbondivider.png";
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css'
+import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
+
+const pageTitle = "My Games";
+---
+
+<PersonalBaseLayout pageTitle={pageTitle}>
+		<h1>Character Catalog</h1>
+		
+        <h1>HotWR House of the Wilted Rose</h1>
+        <p> Unannounced Horror Game  - no page up for it yet but it's a RPGmaker horror inspired game I've been wanting to make since I was in middle school. More details and the game itself coming by Q1 2026</p>
+        <p> A Wine Colored Crime Remake - no page yet. A remake of the demo for and a finished version of my <a href="https://theartofgaming.itch.io/a-wine-colored-crime">Nanoreno 2019 project</a>. Release date as of yet unknown</p>
+        <h1>In Development but in a demo-able state</h1>
+        <p> <a href="/games/dungen/">Dungeon Generator</a> - a browser dungeon generator made with Kenney assets in a few days for Ludum Dare! </p>
+        <p>
+			Looking for a project that's not listed here? It's probably an older project up on my <a href="https://theartofgaming.itch.io">Itch.io</a> near the bottom!
+        </p>
+		<script>
+			import '../scripts/menu.js'
+		  </script>
+	
+</PersonalBaseLayout>
+
+<style>
+	/*main {
+		margin: auto;
+		padding: 1%;
+		width: 800px;
+		max-width: calc(100% - 1%);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.divider{
+		display:flex;
+		justify-content:center;
+		margin:auto;
+		text-align:center;
+		width:50%;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}*/
+	img {
+    float:left;
+	padding: 2%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

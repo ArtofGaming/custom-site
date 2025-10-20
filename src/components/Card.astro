@@ -2,16 +2,16 @@
 interface Props {
 	title: string;
 	body: string;
-	href: string;
+	url: string;
 	image: string;
 	pubDate: Date;
 }
 
-const { href, title, body, image } = Astro.props;
+const { url, title, body, image } = Astro.props;
 ---
 <div style="padding-left:0; padding-right:0; min-height:0; overflow:hidden; border-radius:5px">
 	<li class="link-card">
-		<a href={href}>
+		<a href={url}>
 			<img class="card-img" src={image} alt="project image">
 				<h2>
 					{title}

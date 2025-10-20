@@ -179,7 +179,6 @@ html {
   display: grid;
   grid-gap: var(--margin);
   grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
-  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
 }
 
 main {

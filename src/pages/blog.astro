@@ -1,5 +1,5 @@
 ---
-import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Layout from '../layouts/Layout.astro';
 import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
 import Card from '../components/Card.astro';
@@ -15,21 +15,16 @@ const allPosts = await getCollection("blog");
         <em>Where my musings on creativity, notes on process, and progress updates live</em>
 			<ul role="list" class="link-card-grid">
 				{allPosts.sort((a,b) => {
-					const DateA = a.data.pubDate.toLocaleDateString()
-					const DateB = b.data.pubDate.toLocaleDateString()
-					if(DateA > DateB) {
-						return -1;
+					return Date.parse(b.data.pubDate.toLocaleDateString()) - Date.parse(a.data.pubDate.toLocaleDateString())
 					}
-					if (DateA < DateB){
-						return 1;
-					}}
 				).map((post) => <Card
 				pubDate={post.data.pubDate}
 				title={post.data.title}
 				body={post.data.description}
-				href={`${post.data.title}`}
+				url={`../posts/${post.id}/`}
 				image={post.data.image.url}
 				/>)}
+				
 			</ul>
 		  
 			<script>

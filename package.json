@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "^4.1.0",
+    "@astrojs/preact": "^4.1.1",
     "@astrojs/rss": "^4.0.12",
     "@fontsource-variable/noto-serif-georgian": "^5.2.7",
     "@fontsource-variable/nunito": "^5.2.6",
     "@fontsource-variable/winky-rough": "^5.2.4",
-    "astro": "^5.12.5",
+    "astro": "^5.14.6",
     "preact": "^10.24.1"
   },
   "description": "```sh\r npm create astro@latest -- --template basics\r ```",
