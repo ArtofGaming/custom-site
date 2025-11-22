@@ -38,6 +38,11 @@
   box-sizing: border-box;
 }
 
+.divider {
+  height: 20px;
+  background-image: url("/candybar52.gif");
+  border: none;
+}
 body {
   display: flex;
   align-items: center;
@@ -85,10 +90,6 @@ a:focus {
 html {
     background-color:rgb(54, 35, 12);
     font-family: sans-serif;
-  }
-  
-  .divider{
-    margin:auto;
   }
 
   aside {
@@ -178,7 +179,7 @@ html {
   width: 1200px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "footer footer" auto / var(--sidebar-width) auto;
 }
 
 main {

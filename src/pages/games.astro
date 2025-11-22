@@ -1,24 +1,23 @@
 ---
-import { Image } from 'astro:assets';
-import divider from "../ribbondivider.png";
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Header from '../components/Header.astro';
-import '../styles/global.css'
+import { getCollection, render } from "astro:content";
 import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
-
 const pageTitle = "My Games";
+const allPosts = await getCollection("blog");
+const allGames = await getCollection('games');
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
 		<h1>All My Games and Interactive Things Post 2024</h1>
-		
-        <h1>In Development but not presentation ready</h1>
+
+		<h1>Done/Done for now</h1>
+		<p> <a href="/games/dungen/">Dungeon Generator</a> - a browser dungeon generator made with Kenney assets in a few days for Ludum Dare! </p>
+        
+		<h1>In Development but not presentation ready</h1>
         <p> Unannounced Horror Game  - no page up for it yet but it's a RPGmaker horror inspired game I've been wanting to make since I was in middle school. More details and the game itself coming by Q1 2025</p>
         <p> A Wine Colored Crime Remake - no page yet. A remake of the demo for and a finished version of my <a href="https://theartofgaming.itch.io/a-wine-colored-crime">Nanoreno 2019 project</a>. Release date as of yet unknown</p>
-        <h1>In Development but in a demo-able state</h1>
-        <p> <a href="/games/dungen/">Dungeon Generator</a> - a browser dungeon generator made with Kenney assets in a few days for Ludum Dare! </p>
-        <p>
+        <p> DS Game Project </p>
+		<p> Otomodachi </p>
+		<p>
 			Looking for a project that's not listed here? It's probably an older project up on my <a href="https://theartofgaming.itch.io">Itch.io</a> near the bottom!
         </p>
 		<script>
