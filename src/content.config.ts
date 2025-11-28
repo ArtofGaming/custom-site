@@ -32,5 +32,18 @@ const games = defineCollection({
   })
 });
 
+const characters = defineCollection({
+  loader: glob({ pattern: '**/[^_]*.md', base: "./src/characters" }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    image: z.object({
+      url: z.string(),
+      alt: z.string()
+    }),
+    universe: z.string()
+  })
+});
+
 // Export a single `collections` object to register your collection(s)
-export const collections = { blog , games };
+export const collections = { blog , games , characters};

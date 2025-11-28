@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
+
+export async function getStaticPaths() {
+  const ocs = await getCollection('characters');
+  return ocs.map(oc => ({
+    params: { slug: oc.id }, props: { oc },
+  }));
+}
+
+const { oc } = Astro.props;
+const { Content } = await render(oc);
+---
+
+<PersonalBaseLayout frontmatter={oc.data}>
+  <Content />
+</PersonalBaseLayout>
