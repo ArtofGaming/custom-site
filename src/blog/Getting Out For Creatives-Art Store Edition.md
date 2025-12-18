@@ -2,7 +2,7 @@
 title: 'Getting Out For Creatives-Art Store Edition'
 pubDate: 2024-10-02
 description: 'People always tell why you to touch grass, but never where. This is one inspiring place to go.'
-author: 'Campbell Turner'
+author: 'Cam'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'

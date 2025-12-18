@@ -3,7 +3,7 @@ layout: '../../layouts/MarkdownLayout.astro'
 title: '5 Reasons You Never Finish Projects'
 pubDate: 2024-11-09
 description: "So you've got a pile of unfinished projects and you're tired of adding to it."
-author: 'Campbell Turner'
+author: 'Cam'
 image:
     url: 'https://docs.astro.build/assets/rose.webp'
     alt: 'The Astro logo on a dark background with a pink glow.'
