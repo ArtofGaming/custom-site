@@ -2,10 +2,6 @@
 title: "Things I Want to Learn In 2026"
 pubDate: 2025-12-16
 description: "Inspired by DevTalk's Weekly Discussion Question"
-author: 'Cam'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["2026","learning in public"]
 ---
 

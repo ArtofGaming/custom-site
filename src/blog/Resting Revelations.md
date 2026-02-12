@@ -2,10 +2,6 @@
 title: 'Resting Revelations'
 pubDate: 2025-10-19
 description: 'Sometimes rest is what you need for a breakthrough'
-author: 'Cam'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["sickness", "rest"]
 ---
 

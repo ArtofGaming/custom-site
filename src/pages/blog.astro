@@ -22,7 +22,6 @@ const allPosts = await getCollection("blog");
 				title={post.data.title}
 				body={post.data.description}
 				url={`../posts/${post.id}/`}
-				image={post.data.image.url}
 				/>)}
 				
 			</ul>
@@ -53,6 +52,7 @@ const allPosts = await getCollection("blog");
 	}
 	ul 
 	{
+		text-align: center;
 		margin:0;
 		padding:0;
 		padding-top:1em;

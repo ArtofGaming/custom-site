@@ -3,20 +3,20 @@ import { getCollection, render } from "astro:content";
 import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
 const pageTitle = "My Games";
 import Card from '../components/Card.astro';
+import CollectionGallery from "../components/Collection Gallery.astro";
 const allGames = await getCollection('games');
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
 		<h1>All My Games and Interactive Things Post 2024</h1>
 
-		<ul role="list" class="link-card-grid">
+		<ul role="list" class="link-card-grid-b">
 				{allGames.sort((a,b) => {
 					return Date.parse(b.data.pubDate.toLocaleDateString()) - Date.parse(a.data.pubDate.toLocaleDateString())
 					}
-				).map((game) => <Card
+				).map((game) => <CollectionGallery
 				pubDate={game.data.pubDate}
 				title={game.data.title}
-				body={game.data.description}
 				url={`../games/${game.id}/`}
 				image={game.data.image.url}
 				/>)}
@@ -67,11 +67,10 @@ const allGames = await getCollection('games');
 	img {
     float:left;
 	padding: 2%;
+	height: 80%;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	p {
+		padding-top: 1rem;
 	}
+
 </style>

@@ -3,20 +3,17 @@ interface Props {
 	title: string;
 	body: string;
 	url: string;
-	image: string;
 	pubDate: Date;
 }
 
-const { url, title, body, image } = Astro.props;
+const { url, title, body} = Astro.props;
 ---
 <div style="padding-left:0; padding-right:0; min-height:0; overflow:hidden; border-radius:5px">
 	<li class="link-card">
 		<a href={url}>
-			<img class="card-img" src={image} alt="project image">
 				<h2>
 					{title}
 				</h2>
-			</img>
 			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1ch">
 				{body}
 			</p>
@@ -26,30 +23,33 @@ const { url, title, body, image } = Astro.props;
 </div>
 <style>
 	.link-card {
-		display:inline-grid;
+		text-align: center;
 		padding-top: 0em;
 		background-color: rgb(40, 25, 7);
 		background-image: none;
 		overflow:hidden;
 		min-height:0;
-		width:calc(19rem);
+		width:calc(28rem);
 		border-radius: 5px;
 		background-position: 70%;
 		opacity: .7;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		text-overflow:hidden;
+		height:7em
 	}
 	.link-card > a {
+		text-align: center;
 		text-decoration: none;
 		overflow:hidden;
 		min-height:0;
 		display:grid;
 		line-height: 1.4;
 		padding-top: calc(1rem - 1px);
-		width: calc(19rem);
+		width: calc(28rem);
 		color: white;
 		opacity: 0.8;
 		text-overflow:hidden;
+		height:7em;
 	}
 	h2 {
 		text-align: center;

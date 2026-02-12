@@ -2,10 +2,6 @@
 title: "If You Don't Know You Shouldn't Be Doing It"
 pubDate: 2025-12-13
 description: "A small rant about high horses"
-author: 'Cam'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["rant"]
 ---
 

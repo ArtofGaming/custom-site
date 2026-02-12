@@ -1,25 +1,39 @@
 ---
 import '../../styles/global.css'
 import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
-
+image:
+    url: 'https://docs.astro.build/assets/rose.webp'
+    alt: 'The Astro logo on a dark background with a pink glow.'
 const pageTitle = "Dungeon Generator";
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
 	<h1> Dungeon Generator </h1>
-	<p> This project is <b> still in development</b>!</p>
+	<p> This project is <b> finished</b>!</p>
 	
-	<p> <br> <br> Generate a variety of dungeons with the click of a button.  While there are no options for the player, there's still a variety of layouts in resulting dungeons due to the method of procedural generation.
-		<br>Hopefully can be of use to DMs, devs, and boss monsters
-		<br>Done in 6 days over the course of LD 57 Extra Jam to learn more about methods of procedural generation, namely binary space partitioning. 
-	</p>
-        
-		<h3>Known Bugs</h3>
-        <p> Sometimes paths will generate outside of the rooms or not connect all the rooms to one another </p>
-
-		<h3>Next Expected Update</h3>
-		<p> Q3 2025 - fixing room connections plus a fun little extra </p>
-
+	
+	<div class="container">
+		<p>
+			<br> <br> Generate a variety of dungeons with the click of a button.  While there are no options for the player, there's still a variety of layouts in resulting dungeons due to the method of procedural generation.
+			<br>Hopefully can be of use to DMs, devs, and boss monsters
+			<br>Done in 6 days over the course of LD 57 Extra Jam to learn more about methods of procedural generation, namely binary space partitioning. 
+		</p>
+		<img src="../../+Crm_J.png" alt="randomly generated dungeon made with tool" style="float:right;width:40%;"></li>
+	</div>
+	<div class="container">
+		<div>
+			<h3>Known Bugs</h3>
+			<p> Sometimes paths will generate outside of the rooms or not connect all the rooms to one another </p>
+		</div>
+        <img src="../../q9vBAi.png" alt="randomly generated dungeon made with tool" style="float:right;width:40%;"></li>
+	</div>
+	<div class="container">
+		<div>
+			<h3>Next Expected Update</h3>
+			<p> No expected update, game is finished </p>
+		</div>
+		<img src="../../RDvakd.png" alt="randomly generated dungeon made with tool" style="float:right;width:40%;"></li>
+	</div>
 		<script>
 			import '../../scripts/menu.js'
 		  </script>
@@ -58,6 +72,12 @@ const pageTitle = "Dungeon Generator";
 		text-align: center;
 		margin-bottom: 1em;
 	}*/
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
 	img {
     float:left;
 	padding: 2%;

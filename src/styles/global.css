@@ -21,7 +21,7 @@
   /* Text: */
   --font: "Nunito Variable", sans-serif;
   --heading-font: "Winky Rough Variable", sans-serif;
-  --font-size: 14px;
+  --font-size: 16px;
 
   /* Other Settings: */
   --margin: 10px;
@@ -199,7 +199,7 @@ header {
   font-size: 1.2em;
   border: var(--border);
   border-radius: var(--round-borders);
-  background: var(--content-background-color);
+  background: #36230c;
 }
 
 .header-content {
@@ -354,11 +354,24 @@ footer a:focus {
   .link-card-grid{
     display: grid;
     grid-template: 
-    "link-card link-card link-card";
-    grid-template-columns: 19rem;
-    grid-template-rows:15rem;
-    min-width: 19rem;
+    "link-card link-card";
+    grid-template-columns: 29rem;
+    grid-template-rows: 7rem;
+    min-width: 25rem;
     min-height: 0;
+    max-height: 10em;
+    
+    gap: .5em;
+  }
+  .link-card-grid-b{
+    display: grid;
+    grid-template: 
+    "link-card link-card";
+    grid-template-columns: 20rem;
+    grid-template-rows: 18rem;
+    min-width: 25rem;
+    min-height: 0;
+    max-height: 20em;
     
     gap: .5em;
   }
@@ -367,8 +380,8 @@ footer a:focus {
     margin-left: auto;
     margin-right: auto;
     margin-top:0em;
-    max-width:80%; 
-    border-radius: 8px;;
+    width:100%; 
+    border-radius: 8px;
   }
 
   /* nav styles */

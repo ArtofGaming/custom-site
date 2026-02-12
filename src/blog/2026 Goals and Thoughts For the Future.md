@@ -2,10 +2,6 @@
 title: '2026 Goals and Thoughts For the Future'
 pubDate: 2025-12-13
 description: "Looking towards next year"
-author: 'Cam'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["goals"]
 ---
 
