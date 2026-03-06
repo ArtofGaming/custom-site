@@ -4,9 +4,10 @@ interface Props {
 	body: string;
 	url: string;
 	pubDate: Date;
+	tags: string[];
 }
 
-const { url, title, body} = Astro.props;
+const { url, title, body, tags = []} = Astro.props;
 ---
 <div style="padding-left:0; padding-right:0; min-height:0; overflow:hidden; border-radius:5px">
 	<li class="link-card">
@@ -16,6 +17,9 @@ const { url, title, body} = Astro.props;
 				</h2>
 			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1ch">
 				{body}
+			</p>
+			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1ch">
+				tags.map()
 			</p>
 		</a>
 	</li>
