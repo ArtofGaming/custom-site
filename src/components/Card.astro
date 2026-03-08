@@ -15,11 +15,11 @@ const { url, title, body, tags = []} = Astro.props;
 				<h2>
 					{title}
 				</h2>
-			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1ch">
+			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1.5ch">
 				{body}
 			</p>
-			<p style="padding-right: 2ch; padding-left: 2ch; padding-bottom:1ch">
-				tags.map()
+			<p style="padding-top:1.5ch; padding-bottom:1ch; font-family: var(--heading-font)" >
+				{tags.map((tag) => (<span> #{tag}</span>))}
 			</p>
 		</a>
 	</li>
@@ -58,14 +58,14 @@ const { url, title, body, tags = []} = Astro.props;
 	h2 {
 		text-align: center;
 		font-size: 1.25rem;
-		color: rgb(228, 157, 126);
+		color: #FFB8C4;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		margin-top:-.75em;
 		margin-bottom:.25em;
 	}
 	p {
 		text-align: center;
-		overflow:hidden;
+		
 		min-height:0;
 		margin-top: 0;
 		margin-bottom: 0;

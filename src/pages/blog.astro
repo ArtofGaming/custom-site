@@ -22,6 +22,7 @@ const allPosts = await getCollection("blog");
 				title={post.data.title}
 				body={post.data.description}
 				url={`../posts/${post.id}/`}
+				tags={post.data.tags}
 				/>)}
 				
 			</ul>
@@ -58,7 +59,7 @@ const allPosts = await getCollection("blog");
 		padding-top:1em;
 	}
 	em {
-		color: rgb(228, 157, 126);
+		color: #FFB8C4;
 		font-size: 1.25rem;
 		font-weight: 200;
 		line-height: 1;

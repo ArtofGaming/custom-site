@@ -15,7 +15,7 @@
   --text-color: #fef2eb;
   --sidebar-title-text-color:var(--background-color);
   --sidebar-text-color: #fef2eb;
-  --link-color: #ffc7ca;
+  --link-color: #FFB8C4;
   --link-color-hover: #ffe2ca;
 
   /* Text: */
@@ -270,7 +270,7 @@ h1 {
   h2 {
     margin: 1rem 0;
     font-size: 2.5rem;
-    color: rgb(228, 157, 126);
+    color: #FF8A90;
   }
 
 /* HEADINGS: */
@@ -368,10 +368,10 @@ footer a:focus {
     grid-template: 
     "link-card link-card";
     grid-template-columns: 20rem;
-    grid-template-rows: 18rem;
+    grid-template-rows: 25rem;
     min-width: 25rem;
     min-height: 0;
-    max-height: 20em;
+    max-height: 25em;
     
     gap: .5em;
   }

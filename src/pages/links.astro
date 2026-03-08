@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
+import Card from '../components/Card.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+
+const pageTitle = "Other Cool PLaces on the Web";
+---
+
+<PersonalBaseLayout title={pageTitle}>
+    <h2>Webrings</h2>
+    <script widget-style='rainbow-dark' src='https://gdt.fireye.coffee/scripts/widget.js'></script>
+
+    <h2>Personal Sites/Blogs I Thought Were Cool</h2>
+    <p>Small Note: I don't know any of these people in real life, nor do I cosign everything they say. I just think they make cool things!</p>
+    <p>
+        <a href="https://avq.neocities.org" target="_blank"><img alt="AVQ's Homepage" title="AVQ's Homepage" src="https://avq.neocities.org/assets/AVQ88x31.gif"></a>
+        <a href="https://lazer-bunny.neocities.org" target="_blank"><img alt="Lazer-Bunny's Site" title="Lazer-Bunny" src="/lazerbunny-button.gif"></a>
+        <a href="https://catskulls.place/"><img src="https://catskulls.place/img/catskulls.png" alt="catskulls.place" title="catskulls.place"></a>
+        <a href="https://leirin.neocities.org" target="_blank"><img alt="Leirin's Site" title="Leirin's Flourescent Zone" src="/leirin-banner.png"></a>
+        <a href="https://nomnomnami.com/" target="_blank"><img src="https://nomnomnami.com/images/site_button.gif" alt="nomnomnami"></a>
+        <a href="https://lostletters.neocities.org" target="_blank"><img src="/LostLetters88x31.gif" alt="Lost Letters"></a>
+    </p>
+    <br>
+    <br>
+    <br>
+    <p>
+        <a href="https://ctmatthews.com">C.T Matthews</a>
+    </p>
+    <h2>Comics I Like</h2>
+    <p>
+        <a href="https://gogogris.com">Go Go Gris!</a> A comic about a strong lovable bear girl in a cruel big city. | Genre: Comedy, Slice of life
+        <br>
+        <a href="https://castoff-comic.com/comic/1">Castoff!</a> A comic about a magical shut-in and the journey he gets whisked away on after a bounty hunter tries to kill him. | Genre: Fantasy, Adventure
+        <br>
+        <a href="https://www.to-zo.com/notbut">NOT/BUT</a> 4 panel comics about getting to work despite obstacles. | Genre: Advice, Self Help
+        <br>
+    </p>
+   
+    <h2>Resources</h2>
+    <h3>Self Care</h3>
+    <p>
+        <a href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html">You Feel Like Shit</a> An interactive guide to feeling better.
+    </p> 
+    <h3>Webmastery</h3>
+    <p>
+        <a href="https://wave.webaim.org">WAVE Web Accessibility Evaluation Tools</a> A bunch of tools to check accessibility on your site
+        <br>
+        <a href="https://hekate2.github.io/buttonmaker/">88x31 Button Maker</a> A quick way to make a button for your site!
+    </p>
+    <h3>General Programming</h3>  
+    <p>  
+        <a href="https://geosoft.no/development/cppstyle.html#Naming%20Conventions">C++ Naming Conventions</a> What it says on the tin
+        <br>
+        <a href="https://www.learncpp.com">Learn C++</a> A cool website to learn C++
+        <br>
+        <a href="https://www.w3schools.com/">W3Schools</a> A website with reference for a bunch of languages including HTML,SQL and Java
+    </p>
+    <h3>Game Programming</h3>
+    <p>
+        <a href="https://gameprogrammingpatterns.com/contents.html">Game Programming Patterns</a> A collection of patterns to use to make your code easier to parse and more efficient
+        <br>
+        <a href="https://medium.com/geekculture/how-to-make-your-own-game-engine-and-why-ddf0acbc5f3">How To Make Your Own Game Engine (and Why)</a> A short article with tips on making your own engine
+    </p>
+    <h3>Game Design</h3>
+    <p>
+        <a href="https://yanfly.moe/comics/">Yanfly's Tutorial Comics</a> A series of comics explaining game design (made for RPGMaker but applicable to other engines)
+        <br>
+        <a href="https://rpgmaker.net/articles/698/">Using Enemy Attack Patterns</a> A rpgmakerweb article about enemy design (applicable to any engine)
+        <br>
+        <a href="https://web.archive.org/web/20190108195313/http://www.pixelprospector.com/the-big-list-of-game-design/">The Big List of Game Design</a> A list of game design resources including books, articles, and forum discussions
+        <br>
+        <a href="http://www.designersnotebook.com/Design_Resources/No_Twinkie_Database/no_twinkie_database.htm">No Twinkie Database</a> An archive of game design pitfalls
+    </p>
+    <h3>Game Scope and Game Jams</h3>
+    <p>
+        <a href="https://arimiadev.com/cutting-scope-from-games/">Adding and Cutting Scope From Games</a> A beginner friendly guide to scope, what it is, and when to cut
+        <br>
+        <a href="https://makegames.tumblr.com/post/1136623767/finishing-a-game">Finishing A Game</a> Derek Yu's insightful guide to actually finishing and shipping a game
+        <br>
+        <a href="https://jam.fmlad.com">Quick Start Game Jam Ideas Generator</a> An awesome generator for game ideas whether for a jam or otherwise
+        <br>
+        <a href="https://ldjam.com">Ludum Dare Game Jam</a> The site for the first jam I ever joined
+        <br>
+        <a href="https://itch.io/jams">Itch.io Game Jam Calendar</a> A huge list of game jams being hosted at any given time
+    </p>
+
+	<script>
+			import '../scripts/menu.js'
+		  </script>
+</PersonalBaseLayout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	img {
+    float:left;
+	padding: 2%;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 0em;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+
+</style>
