@@ -102,6 +102,10 @@ html {
   
   }
 
+  .left-sidebar {
+  grid-area: leftSidebar;
+  padding: .4em
+  }
   .left-sidebar1 {
   grid-area: leftSidebar1;
   padding: .4em
@@ -153,7 +157,7 @@ html {
   }
 
   .sidebar-section:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   }
 
   .sidebar-section{
@@ -179,7 +183,7 @@ html {
   width: 1200px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
 }
 
 main {
