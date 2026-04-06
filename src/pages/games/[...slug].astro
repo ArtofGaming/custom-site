@@ -4,8 +4,8 @@ import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
 import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
 
 export async function getStaticPaths() {
-  const arcade = await getCollection('games');
-  return arcade.map(game => ({
+  const games = await getCollection('games');
+  return games.map(game => ({
     params: { slug: game.id }, props: { game },
   }));
 }

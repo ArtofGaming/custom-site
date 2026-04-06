@@ -143,10 +143,6 @@ html {
   padding: .4em
   }
 
-  .right-sidebar {
-  grid-area: rightSidebar;
-  }
-
   .sidebar-title {
   font-weight: bold;
   font-size: 1.2em;
@@ -217,8 +213,8 @@ header {
 }
 
 .header-image img {
-  width: 100%;
-  height: auto;
+  width: 30%;
+  height: 30%;
 }
 
 h1 {
