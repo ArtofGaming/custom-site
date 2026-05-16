@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets';
+import { getCollection, render } from "astro:content";
+import DatelessGallery from "../components/Dateless Gallery.astro";
 import divider from "../ribbondivider.png";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
@@ -7,14 +9,34 @@ import Header from '../components/Header.astro';
 import '../styles/global.css'
 import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
 
-const pageTitle = "My Games";
+const pageTitle = "Characters and Worlds";
+const allWorlds = await getCollection("worlds");
+const allCharas = await getCollection("characters")
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
+		<h2>Warning: Page heavily under construction</h2>
+		<h1>Worlds</h1>
+		<h3>The various world I've created and hold dear</h3>
+			<ul role="list" class="link-card-grid-b">
+				{allWorlds.map((world) => <DatelessGallery
+				title={world.data.title}
+				url={`../worlds/${world.id}/`}
+				image={world.data.image.url}
+				/>)}
+				
+			</ul>
 		<h1>Character Catalog</h1>
+		<ul role="list" class="link-card-grid-b">
+				{allCharas.map((oc) => <DatelessGallery
+				title={oc.data.title}
+				url={`../characters/${oc.id}/`}
+				image={oc.data.image.url}
+				/>)}
+				
+			</ul>
+
 		
-		<h2>Fandom OCs</h2>
-		<h2>Original OCs</h2>
 		
 		<script>
 			import '../scripts/menu.js'

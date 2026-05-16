@@ -17,7 +17,7 @@ const allGames = await getCollection('games');
 				).map((game) => <CollectionGallery
 				pubDate={game.data.pubDate}
 				title={game.data.title}
-				url={`../arcade/${game.id}/`}
+				url={`../games/${game.id}/`}
 				image={game.data.image.url}
 				/>)}
 				
