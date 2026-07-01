@@ -1,0 +1,25 @@
+---
+title: "Mid Year Reset"
+pubDate: 2026-07-01
+description: "A little reflection and some house keeping."
+tags: ["journal","2026"]
+---
+
+# What Is This
+
+# A Scuffed Techo Kaigi
+A techo is like notebook or journal and a kaigi is a meeting. So a techo kaigi is basically the big end of year sales report where you talk about what's working and what's not. So please imagine I am presenting this section at the front of a conference room with and overly decorated slideshow that tells you absolutely nothing behind me that I wildly gesture at for seemingly random intervals.
+
+Now that we've set the scene, I've used a few notebooks this year: a Hobonichi Cousin (yes that is what the book is called) for planning and memory keeping, a Hobonichi Weeks dupe from amazon for game dev planning and tracking, a generic yellow pad for notes and task tracking, and a Hobonichi notebook for game dev planning and development. Although it's not a physical notebook, I'll also be taking about my use of Obsidian, a free notetaking app, which I've been using for keeping ideas, media tracking, notes, and planning.
+
+## The Cousin
+I'm not gonna write out Hobonichi Cousin everytime so when I say "the cousin" or "my cousin" know I am not talking about an actual person. This was my first real year trying out anything Hobonichi, especially as I hadn't been particularly good at keeping up with journaling before. But a few months before preorders started last year, I had started writing things by hand again and journaling my thoughts. Then, after hearing so many good things about the paper and loving the features it had, I bought a 2025 cousin for a relatively low price in September. I enjoyed using that thoroughly so I went through the preorder craziness to get my 2026 cousin. While this was fun and managing to snag the A5 Tomie cover version on my first time ordering anything from the brand was both thrilling and something I will always feel lucky for, I will not be buying another cousin for 2027. But I'll talk about that more in a bit.
+
+The way I use my cousin is a little unique so I'm going to list out what each notable spread is used for real quick.
+Yearly - daily spend and marking the last time I did something
+Monthly - mostly unused unless I did something notable that day or something was coming up. In that case I would put a little doodle relating to what I did/had coming up
+Weekly - this is the weird one. I HATE timeblocking things in advance because if I miss the starting time for a block then I get distressed. This will happen even if the reason for starting late was due to someone else interfering. And God forbid I just make a bad estimate on how long something takes to get done, then it becomes this whole thing of, well I can't do the other thing because I haven't finished the first thing but I can't do the first thing because it's not time for the first thing, it's time for the other thing which I can't do because... and on and on. So I just stopped trying to time block. It doesn't help that I was often interrupted and also kinda bad at estimating how long things would take. So I just ignored the time markings entirely and instead use it to track a few things each day of the week: a thing I did for self care, any social time, what books I read, what show/movie I watched (if I tracked youtube there wouldn't be enough space), what games I played, any cool sites I had visited, any cool blog posts I had read, and for a while I tracked what I had created that day. Occassionally I also tracked food in this section but that never really stuck
+Daily - quick journaling or todo lists. To the left of the "magic line" I track what I did per hour as I remember throughout the day. For any pages left blank, they were what I'd use for scratch paper if I needed to plan bigger things like a monthly curriculum or goals brainstorming
+My 100 - in 2025 this was 100 ways to make progress on a game and in 2026 it's 100 creative things to do. If I can find the 2025 one I'll make a little blog post with that list of ideas
+
+While I haven't been using the cousin every day, I get a lot of value from it. I do really like it's paper and all the little pages in the back. I was so excited for the comfortable night's sleep page that got added this year since I'm an insomniac! When I first got a cousin, I read the quotes everytime I used a new daily page but recently I haven't been paying any attention to them at all. I don't even remember the last time I looked at one. Also the fact I can't have a horizontal weekly for planning at a glance kinda trips me up since even if I used the current weekly pages like I'd use a horizontal weekly and just ignored the time markers, it'd be too much space. Due to that and the fact that you currently have to buy a cover and notebook bundle if you're buying from the US and the sticker shock I got last year, I won't be rebuying a cousin for 2027. 
