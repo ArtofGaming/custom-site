@@ -2,7 +2,7 @@
 title: "Mid Year Reset"
 pubDate: 2026-07-01
 description: "A little reflection and some house keeping."
-tags: ["journal","2026"]
+tags: ["journal","2026", "reset"]
 ---
 
 # What Is This
@@ -48,3 +48,42 @@ I've been using Obsidian for years, trying different ways of organizing things t
 - Dataview is an amazing plugin that makes organizing data so much easier. You can use it to make tables and charts based off of your notes to make things like a book log or to be watched list. My favorite thing I used it for was to make automatically updated progress bars for every project I'm working on.
 - Templater lets me make template note that I can fill in later. I use this mostly for making fillable character sheets and GDDs.
 
+# Goal Review
+## 2026 Goals Blog Post
+Let's start with the blog post I made last year. I did not end up doing the MVNA game jam but still
+want to bring that idea to life eventually. I did however already do a successful game jam! Otome Jam ended with my team submitting a game, although I'll still be making some touchups to it. Website-wise, I have kept updating the website as every month I've made either a blog post or some website change! I'm super proud of myself for that. 
+## Art Bingo Update
+I did give an OC a design finally (just haven't posted it yet) so I'm on my way to getting that one done. I've made some progress on the game dev tool. I got my free space done April 2nd when I made my first shader. I made a short musical sketch on March 11th. It was a little pirate shanty that I actually think was pretty catchy and very singable (although the words were never finalized). March 7th I updated the site and made a character page template for the Worlds and Characters page. The last tile with progress is the Artfight tile. I submitted my first attack on the 3rd so I'll mark off the tile with that date. In all there are still 20/25 tiles with no progress so I have some work to do on my art goals.
+## General Unshared 2026 Goals
+For 2026, I decided to give myself a big goal each quarter and make that goal a little harder/ more specific each month. For Q1 I really wanted to cut down on my doordashing as it was eating up a lot of my funds and was also definitely not good for my health. Also it kinda pissed me off that I was still paying for groceries and then... just not eating them?? So even more waste. Not to mention the food wasn't even tasting good anymore. I started out by letting myself order 9 times in January. I only ordered Doordash 7 times. In February the goal was 5, the actual was 9. In March, the original goal was 2 but I changed it to be 5 times or less which I hit exactly. Q2 was about working out which I didn't really hit any of my goals for. I did however start exercising more in June even if I didn't get to doing 4 times a week. July starts Q3 which is about eating better and so far I'm on track for eating fruit 4 days this week.
+
+# The Good, Bad, and Needs Improvement of 2026 So Far
+Aka Good, Bad and Ugly but I don't really wanna talk about the ugly tbh.
+## Good
+- I learned how to make shaders!
+- I made more friends and connected to devs in my area
+- I got a (temporary) mentor
+- I finished Otome Jam
+- I got back into making music
+- I got a coding contract
+- I started going to estate sales
+## Bad
+- I finished out my contract from 2025
+- Having to clean up others messes
+## Needs Improvement
+- Keeping up a cleaning schedule is hard lol
+- I should be interacting with more media (books, shows, movies, games, blogs/articles, (indie) sites, etc.)
+- I need to advertise my services more
+- I want to set myself up for the eventuality of making commercial work of my own
+
+# New Goals/ The Plan
+So personally I just want to make sure I keep on being social while spending more time creating (for both myself and others) and more of my time consuming on stuff that's not just random Youtube vids. I've found some really great creators on there but recently it feels like having it on for background noise is often just making me irritated. It's the kinda irritation where my brain just straight up goes "No!" to like everything and I have to figure out how to calm it down lol. I think I'm also going to stop shying away from commercial dev. I've wanted to make commercial games for a while now and am seeing some luck offering my programming services to others. It's really scary as I worry about all the usual stuff like what if I release awful stuff or what if no one plays it, but I spent a lot of the first half of this year being shown that those are excuses. People have come back from bad releases before and playerbase already might have to be regathered for each release since I'm probably going to be changing genre and presentation between games. Frankly in this job market, I'm going to have to learn the days of zero risk are long gone and if this fails I'm only going to be back at square one with knowledge and more experience under my belt. 
+
+# Dedicated Games Time
+All that to say I want to work on games for at least an 4 hours a week, with at least 1 of those being on my projects. I may make this more specific eventually and say that planning work doesn't count or have specific tasks be part of that 4 hours but this should be easy since work will definitely take up more than 3 hours every week. To support this I've been playing around with a new project management tool in Obsidian, obviously I'm not committed to it yet (or else I'd've talked about it above) but it's looking promising. I'm also using physical timers to help with knowing how much time is spent. One aspect of game dev I will definitely be counting is interactions with my audience, so devlogs here or time spent on marketing posts and any market research (that isn't playing games) will count. After all, it's hard to sell a game if no one knkows about it!
+
+# Squeezing In Self Care
+The next big goal is that I want to get on top of personal care. So for me that's cleaning/maintenence and self care. I have a little book that has cleaning tasks for each day I'll be using for cleaning. Then I think I'll make a little menu of self care tasks to do on my breaks between tasks. I've tried in the past to allocate a big chunk of time to stuff but I've found that approach only really works when it comes to getting work done. I also might curate my entertainment so that I'm engaging with media more, not just using it as filler.
+
+# Wrap-up
+So that's been my year so far. There's been stressful periods but overall I'm grateful for the year I've had and am quite lucky. I hope you've been having a good year so far too and if not, I hope it turns around during this half.
