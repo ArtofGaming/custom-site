@@ -15,5 +15,6 @@ const { Content } = await render(game);
 ---
 
 <PersonalBaseLayout frontmatter={game.data}>
+  <h1>{game.data.title}</h1>
   <Content />
 </PersonalBaseLayout>

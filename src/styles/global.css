@@ -101,59 +101,37 @@ html {
   padding: var(--padding);
   
   }
+  .sidebar {
+    grid-area: sidebar;
+    padding:0%;
+    top:1%;
+    position:sticky;
+    border-radius: 0;
+    border:none;
+    overflow:visible;
+    background: none;
+  }
 
   .left-sidebar {
-  grid-area: leftSidebar;
-  padding: .4em;
-  position:sticky;
-  top: 10px;
-  bottom:10px;
+  padding-top: 0%;
+  padding-bottom: .4em;
+  padding-left: .4em;
+  padding-right: .4em;
+  
   }
+
   .left-sidebar1 {
-  grid-area: leftSidebar1;
   padding: .4em;
-  position:sticky;
-  top: 383px;
-  bottom:10px;
+  
   }
 
   .left-sidebar2 {
-  grid-area: leftSidebar2;
   padding: .4em;
-  position:sticky;
-  top: 530px;
-  bottom:10px;
   }
 
   .left-sidebar3 {
-  grid-area: leftSidebar3;
   padding: .4em;
-  position:sticky;
-  top: 640px;
-
-  }
-
-  .left-sidebar4 {
-  grid-area: leftSidebar4;
-  padding: .4em;
-  position:sticky;
-  }
-
-  .left-sidebar5 {
-  grid-area: leftSidebar5;
-  }
-
-  .left-sidebar6 {
-  grid-area: leftSidebar6;
-  }
-
-  .left-sidebar7 {
-  grid-area: leftSidebar7;
-  }
-
-  .left-sidebar {
-  grid-area: leftSidebar;
-  padding: .4em
+  /*position:sticky;*/
   }
 
   .sidebar-title {
@@ -200,7 +178,7 @@ html {
   width: 1200px;
   display: grid;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "leftSidebar main" auto "leftSidebar1 main" auto "leftSidebar2 main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header" auto "sidebar main" auto "sidebar main" auto "sidebar main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
 }
 
 main {
@@ -243,7 +221,7 @@ h1 {
   font-size: 1.5em;
 }
 
-  body {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,15 +262,15 @@ h1 {
   transform: translateY(0);
 }
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
   
-  h2 {
+h2 {
     margin: 1rem 0;
     font-size: 2.5rem;
     color: #FF8A90;
-  }
+}
 
 /* HEADINGS: */
 
@@ -368,11 +346,11 @@ footer a:focus {
 
 
   /*Cards*/
-  .card {
+.card {
     background-size: 300%;
     padding-left: 0px;
-  }
-  .link-card-grid{
+}
+.link-card-grid{
     display: grid;
     grid-template: 
     "link-card link-card";
@@ -382,8 +360,8 @@ footer a:focus {
     min-height: 0;
     
     gap: .5em;
-  }
-  .link-card-grid-b{
+}
+.link-card-grid-b{
     display: grid;
     grid-template: 
     "link-card link-card";
@@ -392,30 +370,30 @@ footer a:focus {
     min-width: 25rem;
     
     gap: .5em;
-  }
+}
 
-  .card-img{
+.card-img{
     display:grid;
     margin-left: auto;
     margin-right: auto;
     margin-top:0em;
     width:100%; 
     border-radius: 8px;
-  }
+}
 
   /* nav styles */
-  .hamburger {
+.hamburger {
     padding-right: 20px;
     cursor: pointer;
-  }
+}
   
-  .hamburger .line {
+.hamburger .line {
     display: block;
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
     background-color: rgb(228, 157, 126);
-  }
+}
 
 .nav-links {
     top: 5rem;
@@ -423,36 +401,61 @@ footer a:focus {
     font-family: var(--heading-font);
     text-align:left;
     width: 2px;
-  }
+}
   
-  .nav-links a {
+.nav-links a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(255, 255, 238);
     width: 2px;
-  }
+}
   
-  .nav-links a:hover,
-  .nav-links a:focus {
+.nav-links a:hover,
+.nav-links a:focus {
     color: rgb(228, 157, 126);
     width: 2px;
-  }
+}
   
-  .expanded {
+.expanded {
     display: unset;
-  }
+}
   
-  @media screen and (min-width: 636px) {
-    .nav-links {
+@media screen and (min-width: 636px) {
+  .nav-links {
       display: block;
       position: static;
       width: auto;
       background: none;
-    }
-  
-    .hamburger {
-        display: none;
-      }
   }
+  
+  .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 800px) {
+  .left-sidebar {
+    grid-area: leftSidebar;
+    padding: .4em;
+    position: relative;
+  }
+  .left-sidebar1 {
+  grid-area: leftSidebar1;
+  padding: .4em;
+  position: relative;
+  }
+
+  .left-sidebar2 {
+  grid-area: leftSidebar2;
+  padding: .4em;
+  position: relative;
+  }
+
+  .left-sidebar3 {
+  grid-area: leftSidebar3;
+  padding: .4em;
+  position: relative;
+  }
+}

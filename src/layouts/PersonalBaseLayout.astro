@@ -4,7 +4,7 @@ import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import '@fontsource-variable/winky-rough';
 import Navigation from '../components/Navigation.astro';
-const { pageTitle } = Astro.props;
+const { pageTitle } = Astro.props
 ---
 <html lang="en">
   <head>
@@ -42,16 +42,27 @@ const { pageTitle } = Astro.props;
           <p>This site is under active construction, so if something looks off, it probably is! </p>
         </div>
       </aside>-->
-      <aside class="left-sidebar">
+
+      <aside class="sidebar">
+        <aside class="left-sidebar">
+      <div class="sidebar-title">Currently Working On</div>
+        <div class="sidebar-section">
+          <p> You're My Angel</p>
+        </div>
+      </aside>
+      <br>
+        <aside class="left-sidebar1">
         <div class="sidebar-title">Navigation</div>
         <div class="sidebar-section-a">
             <Navigation></Navigation>
         </div>
       </aside>
-      
-      <aside class="left-sidebar3">
+      <br>
+      <aside class="left-sidebar2">
         <div class="sidebar-title">Site Updates Feed</div>
         <div class="sidebar-section">
+            <p>07/26 - some visual updates, updated now, uses, and links, also new post</p>
+            <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>07/06 - new blog post</p>
             <img src="/foollovers-h01-ribbon-line.gif" alt="pink divider with bows" width="162">
             <p>07/03 - new blog post and new page</p>
@@ -89,14 +100,12 @@ const { pageTitle } = Astro.props;
             <p>7/27 - added layout from layout generator</p>
         </div>
       </aside>
-      <aside class="left-sidebar2">
-      <div class="sidebar-title">Currently Working On</div>
-        <div class="sidebar-section">
-          <p> Resting :p</p>
-        </div>
+      
       </aside>
       
+      
 	
+      <!--- 
       <aside class="left-sidebar1">
       <div class="sidebar-title">Todo List</div>
         <div class="sidebar-section">
@@ -107,6 +116,7 @@ const { pageTitle } = Astro.props;
           </ul>
         </div>
       </aside>
+      -->
   
       <main id="content" style="min-height:0;"> <!-- Do NOT remove the ID here -->
         <slot />

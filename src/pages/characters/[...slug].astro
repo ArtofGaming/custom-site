@@ -15,5 +15,6 @@ const { Content } = await render(oc);
 ---
 
 <PersonalBaseLayout frontmatter={oc.data}>
+  <h1>{oc.data.title}</h1>
   <Content />
 </PersonalBaseLayout>

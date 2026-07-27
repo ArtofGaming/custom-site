@@ -1,8 +1,9 @@
 ---
+layout: ../../layouts/WorkLayout.astro
 title: "Mid Year Reset"
 pubDate: 2026-07-01
 description: "A little reflection and some house keeping."
-tags: ["journal","2026", "reset"]
+tags: ["journal","2026","reset"]
 ---
 
 # What Is This

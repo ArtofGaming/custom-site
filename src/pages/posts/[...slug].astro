@@ -15,5 +15,7 @@ const { Content } = await render(post);
 ---
 
 <PersonalBaseLayout frontmatter={post.data}>
+  <h1>{post.data.title}</h1>
+  <br>
   <Content />
 </PersonalBaseLayout>
