@@ -1,15 +1,11 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
 title: 'Dungeon Generator (DunGen)'
 pubDate: 2024-11-09
 description: "Generate a variety of dungeons with the click of a button."
-author: 'Campbell Turner'
 image:
     url: '../../dungeongeneratorimage.png'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["finishing things","development woes"]
-theme:
-    back-color: "white"
+    alt: 'A backpack with rolled up maps in it.'
+tags: ["tool","generator"]
 ---
 
 <img src="/+Crm_J.png">
