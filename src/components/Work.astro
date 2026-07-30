@@ -11,13 +11,12 @@ const { href, title, body, image } = Astro.props;
 <div>
 	<li class="link-card">
 		<a href={href}>
-			<img class="card-img" src={image} alt="project image">
+			<img class="card-img" src={image} alt="project image"/>
 				<h2>
 					{title}
 			
 				</h2>
 				
-			</img>
 			<p style="padding-right: 4ch;">
 				{body}
 			</p>
