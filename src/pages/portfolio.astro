@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from "astro:content";
+import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
+import WorksGallery from "../components/Works Gallery.astro";
+
+const pageTitle = "Portfolio";
+const allWork = await getCollection('works');
+---
+
+<PersonalBaseLayout title={pageTitle}>
+    <h1>So you'd like to work together...</h1>
+    <h2>Services I Provide</h2>
+    <ul>
+        <li>Scripting</li>
+        <p>I can work quickly on doing camera and sprite work to turn your written script into a fully realized visual novel or set of cutscenes whether you have static sprites or animated ones working with everything from Naninovel to RenPy.</p>
+        <li>Programming</li>
+        <p>I can help you make your game come together using a variety of engines including but not limited to: Godot, Unity, RenPy, and Light.VN.</p>
+    </ul>
+    <h2>Notable Past Works</h2>
+    <ul role="list" class="link-card-grid-b">
+		{allWork.sort((a,b) => {
+			return Date.parse(b.data.pubDate.toLocaleDateString()) - Date.parse(a.data.pubDate.toLocaleDateString())
+		}).map((game) => <WorksGallery
+			pubDate={game.data.pubDate}
+			title={game.data.title}
+            role={game.data.role}
+			url={`../games/${game.id}/`}
+			image={game.data.image.url}
+            description={game.data.description}
+            link={game.data.link}
+		/>)}	
+	</ul>
+</PersonalBaseLayout>

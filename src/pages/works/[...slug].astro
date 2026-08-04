@@ -1,0 +1,20 @@
+---
+import { getCollection, render } from 'astro:content';
+import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
+import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
+
+export async function getStaticPaths() {
+  const works = await getCollection('works');
+  return works.map(works => ({
+    params: { slug: works.id }, props: { works },
+  }));
+}
+
+const { works } = Astro.props;
+const { Content } = await render(works);
+---
+
+<PersonalBaseLayout frontmatter={works.data}>
+  <h1>{works.data.title}</h1>
+  <Content />
+</PersonalBaseLayout>
