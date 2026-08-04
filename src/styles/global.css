@@ -176,9 +176,9 @@ html {
 
   .layout {
   width: 1200px;
-  display: grid;
+  display: block;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "sidebar main" auto "sidebar main" auto "sidebar main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header header" auto "main" auto "sidebar main" auto "sidebar main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
 }
 
 main {
@@ -199,6 +199,7 @@ header {
   border: var(--border);
   border-radius: var(--round-borders);
   background: #36230c;
+  margin-bottom: 2rem;
 }
 
 .header-content {

@@ -3,54 +3,6 @@ import { glob } from "astro/loaders";
 // Import utilities from `astro:content`
 import { z, defineCollection } from "astro:content";
 // Define a `loader` and `schema` for each collection
-const blog = defineCollection({
-    loader: glob({ pattern: '**/[^_]*.md', base: "./src/blog" }),
-    schema: z.object({
-      title: z.string(),
-      pubDate: z.date(),
-      description: z.string(),
-      tags: z.array(z.string())
-    })
-});
-
-const games = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.md', base: "./src/games" }),
-  schema: z.object({
-    title: z.string(),
-    pubDate: z.date(),
-    description: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string()
-    }),
-    tags: z.array(z.string())
-  })
-});
-
-const characters = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.md', base: "./src/characters" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string()
-    }),
-    universe: z.string()
-  })
-});
-
-const worlds = defineCollection({
-  loader: glob({ pattern: '**/[^_]*.md', base: "./src/worlds" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string()
-    })
-  })
-});
 
 const works = defineCollection({
   loader: glob({ pattern: '**/[^_]*.md', base: "./src/works" }),
@@ -68,4 +20,4 @@ const works = defineCollection({
 });
 
 // Export a single `collections` object to register your collection(s)
-export const collections = { blog , games , characters, worlds, works};
+export const collections = {works};

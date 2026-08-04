@@ -1,28 +1,35 @@
 ---
-import '../styles/global.css'
+import { getCollection, render } from "astro:content";
 import PersonalBaseLayout from '../layouts/PersonalBaseLayout.astro';
+import WorksGallery from "../components/Works Gallery.astro";
 
-const pageTitle = "Home Page";
+const pageTitle = "Portfolio";
+const allWork = await getCollection('works');
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
-		<h1>Welcome to my cozy spot on the internet!</h1>
-        <p>
-			This is the fun, personal side of my site where I can collect the projects I care about 
-			in one place, give updates and my personal thoughts on things. It's also a good place to 
-			collect all the different hobbies I have and hopefully make friends and find places of 
-			inspiration in a less mind-numbing way than social media and youtube. I'm taking my time 
-			on this site and kind of doing a learning in public type thing by just uploading whatever 
-			I end up finishing on days I work on this, so it'll be under construction for a long time. 
-			I hope you'll enjoy and stick with me nonetheless.
-        </p>
-		
-		<img src="../../Wish I wasn_t here.png" style="margin:auto; max-width: 100%; height:auto" 
-		alt="A picture of my character Eva looking through a window at a forest path titled 'Wish I 
-		Wasnt Here'">
-
-		<script>
-			import '../scripts/menu.js'
-		</script>
+	<h1>I am currently <em>not available</em> for paid or volunteer work.</h1>
+	<h1>So you'd like to work together...</h1>
+    <h2>Services I Provide</h2>
+    <ul>
+        <li>Scripting</li>
+        <p>I can work quickly on doing camera and sprite work to turn your written script into a fully realized visual novel or set of cutscenes whether you have static sprites or animated ones working with everything from Naninovel to RenPy.</p>
+        <li>Programming</li>
+        <p>I can help you make your game come together using a variety of engines including but not limited to: Godot, Unity, RenPy, and Light.VN.</p>
+    </ul>
+    <h2>Notable Past Works</h2>
+    <ul role="list" class="link-card-grid-b">
+		{allWork.sort((a,b) => {
+			return Date.parse(b.data.pubDate.toLocaleDateString()) - Date.parse(a.data.pubDate.toLocaleDateString())
+		}).map((work) => <WorksGallery
+			pubDate={work.data.pubDate}
+			title={work.data.title}
+            role={work.data.role}
+			url={`../games/${work.id}/`}
+			image={work.data.image.url}
+            description={work.data.description}
+            link={work.data.link}
+		/>)}	
+	</ul>
 </PersonalBaseLayout>
 
