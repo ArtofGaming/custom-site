@@ -6,7 +6,7 @@ description: "Two small experiments in Godot and Unity trying out cellular autom
 image:
     url: '../../PG Pic.png'
     alt: 'A backpack with rolled up maps in it.'
-link: '/works/adventures-in-procedural-generation'
+link: '/works/procedural-generation'
 ---
 
 <video src="../../cellular automata demonstration.mov" width="320" height="240" controls></video>
