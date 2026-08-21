@@ -363,23 +363,24 @@ footer a:focus {
     gap: .5em;
 }
 .link-card-grid-b{
-    display: grid;
-    grid-template: 
-    "link-card link-card";
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 20rem;
-    grid-template-rows: 25rem;
+    grid-template-rows: 30rem;
     min-width: 25rem;
     
     gap: .5em;
 }
 
 .card-img{
-    display:grid;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
     margin-top:0em;
-    width:100%; 
+    width:80%; 
     border-radius: 8px;
+    height:auto;
+    object-fit: fill;
 }
 
   /* nav styles */

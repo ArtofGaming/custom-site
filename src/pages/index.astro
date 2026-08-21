@@ -8,15 +8,24 @@ const allWork = await getCollection('works');
 ---
 
 <PersonalBaseLayout pageTitle={pageTitle}>
-	<h1>I am currently <em>not available</em> for paid or volunteer work.</h1>
-	<h1>So you'd like to work together...</h1>
+	<h1>I am currently <em>available</em> for paid work.</h1>
+
     <h2>Services I Provide</h2>
-    <ul>
-        <li>Scripting</li>
+        <h4>Scripting</h4>
         <p>I can work quickly on doing camera and sprite work to turn your written script into a fully realized visual novel or set of cutscenes whether you have static sprites or animated ones working with everything from Naninovel to RenPy.</p>
-        <li>Programming</li>
+        <h4>Programming</h4>
         <p>I can help you make your game come together using a variety of engines including but not limited to: Godot, Unity, RenPy, and Light.VN.</p>
+
+    <h2>Rates</h2>
+    <h3>I charge <em>$100USD </em>  per task.</h3>
+    <h3>A task is something like...</h3>
+    <ul>
+        <li>Implement custom UI with provided assets</li>
+        <li>Help me update my game to the latest version of my engine</li>
+        <li>Make a basic feature (ex. catching minigame, infinite runner, schedule system)</li>
+        <li>Script a chapter of a VN or narrative game with provided script and assets</li>
     </ul>
+
     <h2>Notable Past Works</h2>
     <ul role="list" class="link-card-grid-b">
 		{allWork.sort((a,b) => {
@@ -25,11 +34,13 @@ const allWork = await getCollection('works');
 			pubDate={work.data.pubDate}
 			title={work.data.title}
             role={work.data.role}
-			url={`../games/${work.id}/`}
+			url={`../work/${work.data.title}/`}
 			image={work.data.image.url}
             description={work.data.description}
             link={work.data.link}
 		/>)}	
 	</ul>
+
+    <center><h3>Email theartofgaming0@proton.me for inquiries.</h3></center>
 </PersonalBaseLayout>
 

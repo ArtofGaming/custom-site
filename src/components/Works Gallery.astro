@@ -16,8 +16,8 @@ const { url, title, image, description, role, link } = Astro.props;
 		<a href={link}>
 			<img class="card-img" src={image} alt="project image">
 			<h2>{title}</h2>
-			<p>{role}</p>
-			<h3>{description}</h3>
+			<h3>{role}</h3>
+			<p>{description}</p>
 		</a>
 		
 	</li>
@@ -60,6 +60,13 @@ const { url, title, image, description, role, link } = Astro.props;
 		min-height:0;
 		margin-top: 0;
 		margin-bottom: 0;
+	}
+	h3 {
+		text-align: center;
+		font-size: 1.05rem;
+		color: #FFB8C4;
+		margin-top:.4em;
+		margin-bottom:.25em;
 	}
 	ul 
 	{
