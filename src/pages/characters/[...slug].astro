@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import MarkdownLayout from '../../layouts/MarkdownLayout.astro';
-import PersonalBaseLayout from '../../layouts/PersonalBaseLayout.astro';
+import PersonalBaseLayout from '../../layouts/CharaWorldLayout.astro';
 
 export async function getStaticPaths() {
   const ocs = await getCollection('characters');
@@ -15,6 +15,5 @@ const { Content } = await render(oc);
 ---
 
 <PersonalBaseLayout frontmatter={oc.data}>
-  <h1>{oc.data.title}</h1>
   <Content />
 </PersonalBaseLayout>

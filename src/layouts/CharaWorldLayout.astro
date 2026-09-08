@@ -1,0 +1,42 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/test.css';
+import '@fontsource-variable/winky-rough';
+import Navigation from '../components/Navigation.astro';
+const { pageTitle } = Astro.props
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico?v=1.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <script src="https://kit.fontawesome.com/c9d350e02a.js" crossorigin="anonymous"></script>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="The digital home for my thoughts, games, and other projects" name="description" />
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+  </head>
+
+  <body style="min-height:0;">
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+  
+      <main id="content" style="min-height:0;"> <!-- Do NOT remove the ID here -->
+        <slot />
+      </main>
+  
+    <!-- Closing .layout: -->
+    </div>
+  </body>
+
+</html>
