@@ -159,7 +159,7 @@ universe: "When the Apocalypse Comes"
                     <figcaption>original concept art</figcaption>
                   </figure>
                 </a>
-            </details>
+            </details>-->
           <!--add more images here-->
             </div>
         </details>

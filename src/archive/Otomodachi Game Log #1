@@ -1,0 +1,10 @@
+So far I have:
+- ported code to GDScript
+- attached cones to NPCs and made entering them trigger an event
+- made rough ui
+- using csv to display text
+- made choices selectable and have script jump to whatever line the choice picked is on
+- made a rough model of the base student
+- created inspo boards for both Mara and Sutton
+- created concept headshot for Mara
+- outlined 1/4 scenarios/levels
