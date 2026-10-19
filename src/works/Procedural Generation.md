@@ -2,7 +2,7 @@
 title: 'Procedural Generation'
 pubDate: 2025-04-04
 role: 'Solo Dev'
-description: "Two small experiments in Godot and Unity trying out cellular automata to create cavern-like structures and binary spatial partitioning to create room based dungeons respectively."
+description: "Two small tools in Godot and Unity trying out cellular automata to create cavern-like structures and binary spatial partitioning to create room based dungeons respectively."
 image:
     url: '../../PG Pic.png'
     alt: 'A backpack with rolled up maps in it.'

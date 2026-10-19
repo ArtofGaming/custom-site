@@ -2,7 +2,7 @@
 title: 'College Caper'
 pubDate: 2024-04-28
 role: 'Solo Dev'
-description: "A small dressup game prototype I developed using MVC architecture. This game used SQL database to store items and their attributes and PHP on that backend. Then I used Unity to connect the database to the game."
+description: "A small dressup game prototype where clothing attributes were pulled from a SQL database."
 image:
     url: '../../CC Pic.png'
     alt: 'A backpack with rolled up maps in it.'
