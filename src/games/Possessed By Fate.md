@@ -29,29 +29,4 @@ High-resolution, 4K scaled graphics
 Further content warnings can be found at the start of the game. Additionally, the press kit can be found here.
 
 
-Team Credits
-
-Contribution	Name
-Director, Writer	Jordan Kurlan Brown
-Scripter, Programmer, Project Management	Cam (TheArtofGaming)
-Script Editor	Morgan Cross
-Voice Director	E.C.
-UI Designer & Logo Artist	Rosia (ayperosia)
-Artist For Human Characters	simplyhalina
-Artist For Ghost Characters	Corrocerous
-Artist for Watercolor House	robobarbie
-Composer	jnsa
-Line Cutter	Scott Manning
-Line Cutter	Marinist
-Line Cutter	Ley Klussyn
-Line Cutter	Conway Sutton
-Cast
-
-Aurora	Arielle Weekly
-Nicole	Adriona King
-Amy	Monica "Vforest" Johnston
-Anthony	Mike "BrothaKyo" Anthony
-Dave (Coworker)	Brandon "IkigaiRen" Lee
-Lucy & Reese	Ferdinand The Cat
-
 
