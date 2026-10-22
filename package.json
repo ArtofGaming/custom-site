@@ -16,6 +16,7 @@
     "@fontsource-variable/nunito": "^5.2.6",
     "@fontsource-variable/winky-rough": "^5.2.4",
     "astro": "^7.0.6",
+    "next": "^16.4.1",
     "preact": "^10.24.1"
   },
   "description": "```sh\r npm create astro@latest -- --template basics\r ```",
