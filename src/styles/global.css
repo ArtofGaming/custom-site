@@ -28,7 +28,7 @@
   --padding: 20px;
   --border: 2px solid #000000;
   --round-borders: 10px;
-  --sidebar-width: 200px;
+  --sidebar-width: 100px;
 }
 /* -------------------------------------------------------- */
 /* BASICS */
@@ -178,7 +178,7 @@ html {
   width: 1200px;
   display: block;
   grid-gap: var(--margin);
-  grid-template: "header header" auto "main" auto "sidebar main" auto "sidebar main" auto "leftSidebar3 main" auto "leftSidebar4 main" auto "leftSidebar5 main" auto "footer footer" auto / var(--sidebar-width) auto;
+  grid-template: "header" auto "main" auto "main" auto "main" auto "main" auto "main" auto "main" auto "footer" auto / var(--sidebar-width) auto;
 }
 
 main {
@@ -357,7 +357,7 @@ footer a:focus {
     "link-card link-card";
     grid-template-columns: 29rem;
     grid-template-rows: 7rem;
-    min-width: 25rem;
+    min-width: 20rem;
     min-height: 0;
     
     gap: .5em;
@@ -367,7 +367,7 @@ footer a:focus {
     flex-wrap: wrap;
     grid-template-columns: 20rem;
     grid-template-rows: 30rem;
-    min-width: 25rem;
+    min-width: 20rem;
     
     gap: .5em;
 }
